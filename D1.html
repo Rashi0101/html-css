@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML forms</title>
+    </head>
+    <body>
+        <form oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+
+            a 
+            <input type="number" name="a" id="a" step="0.5">
+            + b 
+            <input type="number" name="b" id="b">
+            =
+            <output name="x" id="x" for="a b"></output><br>
+        
+            <label for="text1">First Name</label>
+            <input type="text" value="Rashika chauhan" name="text1" id="text1"><br>
+            <label>Age</label>
+            <input type="number"><br>
+            <label for="pizza">Pizza</label>
+            <input type="radio" name="radio1" id="pizza"><br>
+            <label for="burger">Burger</label>
+            <input type="radio" name="radio1" id="burger"><br>
+
+            <label for="goa">goa</label>
+            <input type="checkbox" name="checkbox1" id="goa"><br>
+            <label for="banaras">banaras</label>
+            <input type="checkbox" name="checkbox1" id="banaras"><br>
+
+            <select name="places" id="places" size="2">
+                <option value="goa">Goa</option>
+                <option value="banaras">Banaras</option>
+                <option value="paris" selected>Paris</option>
+            </select><br>
+
+            <textarea name="textarea" id="textarea" rows="10" cols="15">My TextArea</textarea><br>
+
+            <button type="button" onclick="">My Button</button>
+            
+
+            <input type="button" value="submit"><br>
+            <br>
+
+            <input list="country" name="xyz" id="xyz">
+            <datalist id="country">
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="America">America</option>
+                <option value="Austria">Austria</option>
+                <option value="Amazon">Amazon</option>
+            </datalist><br>
+
+            <output>
+
+            </output>
+        </form>
+    </body>
+</html>
+
+<fieldset> 
+    <legend>Enter name</legend>
+    <label for="text">First name</label> 
+    <input type="text" name="text" id="text"><br>
+    <label for="text1">middle name</label> 
+    <input type="text" name="text12" id="text1"><br>
+    <label for="text2">last name</label> 
+    <input type="text" name="text" id="text2"><br>
+</fieldset>
+<br>
